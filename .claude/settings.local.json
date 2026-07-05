@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:top.baidu.com)",
+      "WebFetch(domain:item.szlcsc.com)",
+      "Bash(dir \"C:\\\\Users\\\\15951\\\\Desktop\\\\cdce62002.pdf\")",
+      "WebFetch(domain:www.ti.com)",
+      "WebFetch(domain:m.elecfans.com)",
+      "WebFetch(domain:e2echina.ti.com)",
+      "Bash(gh api *)",
+      "Bash(where gh *)",
+      "Bash(claude plugins *)",
+      "Read(//c/Users/15951/.claude/**)",
+      "Read(//c/Users/15951/AppData/Roaming/Claude//**)",
+      "Read(//c/Users/15951/AppData/Local/Claude//**)"
+    ]
+  }
+}
