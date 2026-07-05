@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CppBoostFormatMixedArgs" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="CppCStyleCast" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppEnforceOverridingFunctionStyle" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppEnumeratorNeverUsed" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppIntegralToPointerConversion" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppPossiblyErroneousEmptyStatements" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppPossiblyUninitializedMember" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppRedundantComplexityInComparison" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppRedundantElseKeyword" enabled="true" level="HINT" enabled_by_default="true" />
+    <inspection_tool class="CppStaticSpecifierOnAnonymousNamespaceMember" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  </profile>
+</component>

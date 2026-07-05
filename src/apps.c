@@ -34,9 +34,9 @@ void FAN_SPEED_SET(uint8_t fanNAME, uint8_t fanSPEED)
 
     uint32_t actual_output_percent;
     if ((fanNAME == 1 && fan1_polarity) || (fanNAME == 2 && fan2_polarity)) {
-        actual_output_percent = fanSPEED;           /* 极性勾选：不反转 */
+        actual_output_percent = fanSPEED;         
     } else {
-        actual_output_percent = 100 - fanSPEED;     /* 默认：反转 */
+        actual_output_percent = 100 - fanSPEED;  
     }
 
     timer_ctrl_t * p_timer_ctrl = NULL;

@@ -110,10 +110,7 @@ void hal_entry(void)
             }
         }
 
-        /* === 串口屏更新 === */
         UART0_UpdateDisplay();
-
-        /* 收到按钮触发 → 仅第1页有效，逐一读取屏幕参数 */
         if (fan_update_request && current_page == 1) {
             fan_update_request = false;
 
@@ -147,11 +144,9 @@ void hal_entry(void)
             dbg_speed1 = fan1_duty;
             dbg_speed2 = fan2_duty;
         }
-
-        /* === LED 指示 === */
         blink_counter++;
 
-        /* 通道1 LED → P015(红) P500(绿) */
+        /* 通道1 LED  P015(红) P500(绿) */
         if (ch1_state == short) {
             R_IOPORT_PinWrite(&g_ioport_ctrl, BSP_IO_PORT_00_PIN_15, BSP_IO_LEVEL_LOW);
             R_IOPORT_PinWrite(&g_ioport_ctrl, BSP_IO_PORT_05_PIN_00, BSP_IO_LEVEL_HIGH);
@@ -165,7 +160,7 @@ void hal_entry(void)
             }
         }
 
-        /* 通道2 LED → P013(红) P014(绿) */
+        /* 通道2 LED P013(红) P014(绿) */
         if (ch2_state == short) {
             R_IOPORT_PinWrite(&g_ioport_ctrl, BSP_IO_PORT_00_PIN_13, BSP_IO_LEVEL_LOW);
             R_IOPORT_PinWrite(&g_ioport_ctrl, BSP_IO_PORT_00_PIN_14, BSP_IO_LEVEL_HIGH);
